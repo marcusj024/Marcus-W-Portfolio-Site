@@ -4,241 +4,98 @@ import Highlighter from "./HighLighter";
 
 const FeaturesList = () => {
   return (
-    <section className="pt-12.5">
-      <div className="mx-auto max-w-[1170px] px-4 sm:px-8 xl:px-0">
-        <div className="grid gap-7.5 sm:grid-cols-12">
-          {/* <!-- features item --> */}
-          <div className="sm:col-span-12">
-            <Highlighter>
-              <div className="features-box-border relative rounded-3xl">
-                <div className="box-hover relative overflow-hidden rounded-3xl p-10 xl:p-15">
-                  <div className="relative z-20 flex items-center justify-between">
-                    <div className="w-full max-w-[477px]">
-                      <span className="hero-subtitle-gradient relative mb-4 inline-flex items-center gap-2 rounded-full px-4.5 py-2 text-sm font-medium">
-                        <Image
-                          src="/images/hero/icon-title.svg"
-                          alt="icon"
-                          width={16}
-                          height={16}
-                        />
-
-                        <span className="hero-subtitle-text">
-                          Kickstart your AI Startup
-                        </span>
-                      </span>
-                      <h3 className="mb-4.5 text-heading-4 font-bold text-white">
-                        Seamless OpenAI Integration
-                      </h3>
-                      <p className="mb-10 font-medium">
-                        Build SaaS AI applications using OpenAI and Next.js,
-                        this kit comes with pre-configured and pre-built
-                        examples, making it easier to quickly kickstart your AI
-                        startup.
-                      </p>
-                      <Link
-                        href="/#"
-                        className="features-button-gradient relative inline-flex items-center gap-1.5 rounded-full px-6 py-3 text-sm text-white duration-300 ease-in hover:shadow-button"
-                      >
-                        Learn more
-                        <svg
-                          width="14"
-                          height="12"
-                          viewBox="0 0 14 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.3992 5.60002L8.22422 0.350024C7.99922 0.125024 7.64922 0.125024 7.42422 0.350024C7.19922 0.575024 7.19922 0.925025 7.42422 1.15002L11.6242 5.42503H0.999219C0.699219 5.42503 0.449219 5.67502 0.449219 5.97502C0.449219 6.27502 0.699219 6.55003 0.999219 6.55003H11.6742L7.42422 10.875C7.19922 11.1 7.19922 11.45 7.42422 11.675C7.52422 11.775 7.67422 11.825 7.82422 11.825C7.97422 11.825 8.12422 11.775 8.22422 11.65L13.3992 6.40002C13.6242 6.17502 13.6242 5.82502 13.3992 5.60002Z"
-                            fill="white"
-                          />
-                        </svg>
-                      </Link>
-                    </div>
-
-                    <div className="relative hidden aspect-square w-full max-w-[428px] sm:block">
-                      <Image
-                        src="/images/features/big-icon.svg"
-                        alt="icon"
-                        fill
-                      />
-                    </div>
-                  </div>
-
-                  {/* <!-- bg shapes --> */}
-                  <div className="pointer-events-none absolute inset-0 -z-10 -mx-28 overflow-hidden">
-                    <span className="absolute bottom-0 right-0">
-                      <Image
-                        src="/images/features/shape-01.png"
-                        alt="shape"
-                        width={282}
-                        height={226}
-                      />
-                    </span>
-                    <span className="absolute left-0 top-0 aspect-1170/192 w-full">
-                      <Image
-                        src="/images/features/shape-02.svg"
-                        alt="shape"
-                        fill
-                      />
-                    </span>
-                    <span className="absolute bottom-0 left-1/2 h-full w-full -translate-x-1/2">
-                      <Image
-                        src="/images/blur/blur-03.svg"
-                        alt="blur-sm"
-                        fill
-                        className="max-w-none"
-                      />
-                    </span>
-                    <span className="absolute bottom-0 left-1/2 h-full w-full -translate-x-1/2">
-                      <Image
-                        src="/images/blur/blur-04.svg"
-                        alt="blur-sm"
-                        fill
-                        className="max-w-none"
-                      />
-                    </span>
-                    <span className="absolute bottom-0 left-1/2 aspect-530/270 w-full max-w-[530px] -translate-x-1/2">
-                      <Image
-                        src="/images/blur/blur-05.svg"
-                        alt="blur-sm"
-                        fill
-                        className="max-w-none"
-                      />
-                    </span>
-                    <span className="absolute right-0 top-0 aspect-580/430 w-full max-w-[580px]">
-                      <Image
-                        src="/images/features/shape-03.svg"
-                        alt="shape"
-                        fill
-                        className="max-w-none"
-                      />
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </Highlighter>
+    <section className="pt-12.5 bg-[#0C2340] pb-20"> {/* Titans Navy Background */}
+      <div className="mx-auto max-w-[1200px] px-4 sm:px-8">
+        
+        {/* Section Title */}
+        <div className="mb-14 text-center">
+          <h2 className="text-3xl font-black text-white uppercase italic tracking-tighter sm:text-5xl">
+            Featured Projects
+          </h2>
+          <div className="mt-4 flex justify-center">
+             <span className="h-1 w-24 bg-[#4B92DB]"></span>
           </div>
+        </div>
 
-          {/* <!-- features item --> */}
-          <div className="sm:col-span-7">
+        <div className="grid gap-8 lg:grid-cols-2">
+          
+          {/* --- PROJECT 1: THE BEANS PLACE --- */}
+          <div className="flex">
             <Highlighter>
-              <div className="features-box-border relative rounded-3xl">
-                <div className="box-hover box-hover-small relative overflow-hidden rounded-3xl px-11 pb-14 pt-12.5">
-                  <div className="relative z-20">
-                    <span className="icon-border relative mx-auto mb-13.5 inline-flex h-20 w-full max-w-[80px] items-center justify-center rounded-full">
-                      <Image
-                        src="/images/features/icon-05.svg"
-                        alt="icon"
-                        width={32}
-                        height={32}
-                      />
-                    </span>
-
-                    <h3 className="mb-4.5 text-heading-6 font-semibold text-white">
-                      All Essential SaaS Pages
+              <div className="relative flex flex-col w-full rounded-3xl border border-white/10 bg-white/[0.03] transition-all duration-300 hover:border-[#4B92DB]/50 shadow-2xl">
+                <div className="relative overflow-hidden rounded-3xl p-8 md:p-12 flex flex-col h-full">
+                  <div className="flex-grow">
+                    <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#0C2340] border border-[#4B92DB]/30 text-4xl">
+                      ☕
+                    </div>
+                    <h3 className="mb-4 text-2xl font-black text-white uppercase italic tracking-tight">
+                      The Beans Place
                     </h3>
-                    <p className="font-medium">
-                      Build SaaS AI applications using OpenAI and Next.js, this
-                      kit comes with pre-configured and pre-built examples,
-                      making it easier to quickly kickstart.
+                    <p className="mb-8 text-base font-medium text-gray-300 leading-relaxed lg:text-lg">
+                      A full-featured coffee shop interface demonstrating advanced layout techniques and 
+                      responsive design. This project showcases clean UI/UX principles and the ability 
+                      to build engaging, customer-focused web experiences that perform across all devices.
                     </p>
                   </div>
-
-                  {/* <!-- bg shapes --> */}
-                  <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-                    <span className="absolute bottom-0 left-0 h-full w-full bg-[url(/images/blur/blur-06.svg)] bg-cover bg-center bg-no-repeat"></span>
-
-                    <span className="absolute right-0 top-0 h-full w-full bg-[url(/images/blur/blur-07.svg)] bg-cover bg-center bg-no-repeat"></span>
-
-                    <span className="absolute right-[16%] top-[16%]">
-                      <Image
-                        src="/images/features/shape-04.svg"
-                        alt="shape"
-                        width={250}
-                        height={135}
-                      />
-                    </span>
-                    <span className="absolute bottom-0 left-0 aspect-521/335 w-full max-w-[521px]">
-                      <Image
-                        src="/images/blur/blur-08.svg"
-                        alt="blur-sm"
-                        fill
-                        className="max-w-none"
-                      />
-                    </span>
-                    <span className="absolute bottom-0 left-0 aspect-287/256 w-full max-w-[287px]">
-                      <Image
-                        src="/images/blur/blur-09.svg"
-                        alt="blur-sm"
-                        fill
-                        className="max-w-none"
-                      />
-                    </span>
+                  
+                  <div className="mt-auto pt-6">
+                    <Link
+                      href="https://github.com/marcusj024/the-beans-place-Marcus.git"
+                      target="_blank"
+                      className="inline-flex items-center gap-2 rounded-xl bg-[#4B92DB] px-8 py-4 text-sm font-black uppercase tracking-widest text-white transition-all hover:bg-white hover:text-[#0C2340]"
+                    >
+                      Source Code
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </Link>
                   </div>
                 </div>
               </div>
             </Highlighter>
           </div>
 
-          {/* <!-- features item --> */}
-          <div className="sm:col-span-5">
+          {/* --- PROJECT 2: WE CUT GOOD HAIR --- */}
+          <div className="flex">
             <Highlighter>
-              <div className="features-box-border relative rounded-3xl">
-                <div className="box-hover box-hover-small relative overflow-hidden rounded-3xl px-11 pb-14 pt-12.5">
-                  <div className="relative z-20">
-                    <span className="icon-border relative mx-auto mb-13.5 inline-flex h-20 w-full max-w-[80px] items-center justify-center rounded-full">
-                      <Image
-                        src="/images/features/icon-07.svg"
-                        alt="icon"
-                        width={32}
-                        height={32}
-                      />
-                    </span>
-
-                    <h3 className="mb-4.5 text-heading-6 font-semibold text-white">
-                      Highly Customizable
+              <div className="relative flex flex-col w-full rounded-3xl border border-white/10 bg-white/[0.03] transition-all duration-300 hover:border-[#4B92DB]/50 shadow-2xl">
+                <div className="relative overflow-hidden rounded-3xl p-8 md:p-12 flex flex-col h-full">
+                  <div className="flex-grow">
+                    <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#0C2340] border border-[#4B92DB]/30 text-4xl">
+                      💈
+                    </div>
+                    <h3 className="mb-4 text-2xl font-black text-white uppercase italic tracking-tight">
+                      We Cut Good Hair
                     </h3>
-                    <p className="font-medium">
-                      Build SaaS AI applications using OpenAI and Next.js,
-                      quickly kickstart your AI startup.
+                    <p className="mb-8 text-base font-medium text-gray-300 leading-relaxed lg:text-lg">
+                      A professional barbershop platform designed with a focus on service display and local branding. 
+                      Built using semantic HTML layout patterns and custom, performance-driven styling to ensure a 
+                      premium user experience and fast load times.
                     </p>
                   </div>
-
-                  {/* <!-- bg shapes --> */}
-                  <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-                    <span className="absolute right-[14%] top-[17%]">
-                      <Image
-                        src="/images/features/shape-05.svg"
-                        alt="shape"
-                        width={178}
-                        height={102}
-                      />
-                    </span>
-
-                    <span className="absolute bottom-0 left-0 h-full w-full bg-[url(/images/blur/blur-10.svg)] bg-cover bg-center bg-no-repeat"></span>
-
-                    <span className="absolute right-0 top-0 aspect-394/336 w-full max-w-[394px]">
-                      <Image
-                        src="/images/blur/blur-11.svg"
-                        alt="blur-sm"
-                        fill
-                        className="max-w-none"
-                      />
-                    </span>
-                    <span className="absolute right-0 top-0">
-                      <Image
-                        src="/images/blur/blur-12.svg"
-                        alt="blur-sm"
-                        className="max-w-none"
-                        width={160}
-                        height={303}
-                      />
-                    </span>
+                  
+                  <div className="mt-auto pt-6">
+                    <Link
+                      href="https://github.com/marcusj024/WeCutGoodHair.git"
+                      target="_blank"
+                      className="inline-flex items-center gap-2 rounded-xl bg-[#4B92DB] px-8 py-4 text-sm font-black uppercase tracking-widest text-white transition-all hover:bg-white hover:text-[#0C2340]"
+                    >
+                      Source Code
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </Link>
                   </div>
                 </div>
               </div>
             </Highlighter>
           </div>
+
+          {/* --- BOTTOM SECTION: VETERAN MISSION --- */}
+          <div className="lg:col-span-2">
+            <div className="relative overflow-hidden rounded-3xl bg-[#4B92DB]/5 border border-[#4B92DB]/20 p-8 text-center">
+              <p className="text-white font-bold uppercase tracking-[0.2em] text-sm">
+                Mission Excellence: 10 Years Army Service (SSG)
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

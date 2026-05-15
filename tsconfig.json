@@ -35,7 +35,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
-  ],
+, "src/components/Home/Features/Features.jsx"  ],
   "exclude": [
     "node_modules"
   ]
