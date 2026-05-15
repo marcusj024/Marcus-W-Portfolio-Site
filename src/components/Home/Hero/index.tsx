@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -39,16 +39,25 @@ const Hero = () => {
               Launch Your AI Startup with
             </span>
           </span>
-          <h1 className='xl:text-heading-1 mb-6 text-3xl font-extrabold text-white sm:text-5xl'>
-            OpenAI + Next.js SaaS Boilerplate and Starter Kit
+          <h1 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>
+            Marcus Warren | Developing World
           </h1>
 
-          <p className='mx-auto mb-9 max-w-[500px] font-medium md:text-lg'>
-            Ideal for developers looking to build SaaS applications using OpenAI
-            and Next.js, this starter kit comes with pre-configured and
-            pre-built examples, making it easier to quickly kickstart your AI
-            startup.
+          <p className='mt-6 text-lg leading-8 text-gray-300'>
+            I'm a brand new developer passionate about building intuitive and
+            functional web applications. Exploring new technologies and turning
+            ideas into code is what motivates me every day.
           </p>
+
+          <div class='mt-10 flex items-center gap-x-6'>
+            <a
+              href='https://github.com/your-username'
+              target='_blank'
+              class='rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400'
+            >
+              View My GitHub
+            </a>
+          </div>
 
           <Link
             href='/ai-examples'
